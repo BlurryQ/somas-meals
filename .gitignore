@@ -126,3 +126,9 @@ local.properties
 # OS metadata
 .DS_Store
 Thumbs.db
+
+# server files
+.venv/
+.env
+*.db
+__pycache__/
