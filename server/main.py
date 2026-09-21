@@ -4,7 +4,12 @@ app = FastAPI()
 
 @app.get("/")
 def root():
-    return {"info": "Go to /api for docs"}
+    return {"info": "Go to /api for end points"}
+
+
+@app.get("/api")
+def doc():
+    return {"health": "Get connection health"}
 
 
 @app.get("/api/health")
